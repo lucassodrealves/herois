@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <color name="Lilás">#6200EE</color>
+    <color name="Roxo">#3700B3</color>
+    <color name="AzulBebê">#03DAC5</color>
+    <color name="Estável">#C8C8C8</color>
+    <color name="VermelhoLeve">#F00545</color>
+    <color name="Amarelo">#C98010</color>
+    <color name="AzulLeve">#5080C0</color>
+    <color name="RosaLeve">#E9C0F9</color>
+    <color name="Preto">#000000</color>
+    <color name="Branco">#FAFAFA</color>
+</resources>
