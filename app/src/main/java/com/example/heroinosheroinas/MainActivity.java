@@ -23,8 +23,8 @@ public class MainActivity extends AppCompatActivity {
     String nomeHerois[] = {"Chapolin", "Malévola", "Neo", "Pai dos Incríveis",
             "Super-Choque", "Plutão", "Saturno", "Sol", "Terra", "Urano", "Venus"};
 
-    int imgHerois[] = {R.drawable.chapolin, R.drawable.malevola,
-    };
+    int imgHerois[] = {R.drawable.chapolin, R.drawable.malevola,};
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,7 +52,6 @@ listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
     }
 });
 }
-    }
 
 
 
@@ -60,29 +59,40 @@ listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 public class CustomAdapter extends BaseAdapter {
     @Override
 
-    public int getCount(){return imgHerois.length;}
+    public int getCount() {
+        return imgHerois.length;
+    }
 
     @Override
 
-    public Object getItem(int i) {return null;}
+    public Object getItem(int i) {
+        return null;
+    }
 
     @Override
 
-    public long getItemId(int i) {return 0;}
+    public long getItemId(int i) {
+        return 0;
+    }
 
     @Override
 
-    public View getView(int position, View view, ViewGroup viewgGroup){
+    public View getView(int position, View view, ViewGroup viewgGroup) {
         TextView textoNomeHeroi;
         ImageView imagemHeroi;
 
-        View carregaView=getLayoutInflater().inflate(R.layout.modelo_lista_herois,null);
 
-        textoNomeHeroi=carregaView.findViewById(R.id.textoListaHerois);
-        imagemHeroi=carregaView.findViewById(R.id.imagemListaHerois);
+        View carregaView = getLayoutInflater().inflate(R.layout.modelo_lista_herois, null);
+
+        textoNomeHeroi = carregaView.findViewById(R.id.textoListaHerois);
+        imagemHeroi = carregaView.findViewById(R.id.imagemListaHerois);
 
 
-        textoNomeHeroi.setText(nomeHeroi[position]);
-        imagemHeroi.setImageResource(imgheroi[position]);
+        textoNomeHeroi.setText(nomeHerois[position]);
+        imagemHeroi.setImageResource(imgHerois[position]);
+        return carregaView;
+
     }
-}
+}}
+
+   

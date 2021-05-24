@@ -31,4 +31,3 @@ ImageView imgHerois;
     }
 
     }
-}
